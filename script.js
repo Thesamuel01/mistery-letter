@@ -46,6 +46,13 @@ function validateInput(input) {
   return isValidInput;
 }
 
+function updateLettersCount(texts) {
+  const count = document.querySelector('#carta-contador');
+  const numberOfLetters = texts.length;
+
+  count.innerHTML = numberOfLetters;
+}
+
 function generateLetters() {
   const inputText = document.querySelector('#carta-texto').value;
   // Trecho baseado no link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
@@ -53,6 +60,7 @@ function generateLetters() {
   const isInputEmpty = validateInput(texts);
 
   if (isInputEmpty) {
+    updateLettersCount(texts);
     resetBoard();
 
     for (let index = 0; index < texts.length; index += 1) {
