@@ -1,5 +1,47 @@
+body {
+  background-color: lightgray;
+}
+
 span:hover {
   cursor: pointer;
+}
+
+#app_container {
+  background-color: darkgray;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 100px;
+}
+
+#carta-contador {
+  background-image: linear-gradient(rgba(218, 113, 215, 0.2), beige);
+  color: blueviolet;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+}
+
+#carta-gerada {
+  margin-top: 50px;
+}
+
+#container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#input_container {
+  text-align: center;
+}
+
+#letter_container {
+  margin-top: 20px;
 }
 
 .big {
@@ -30,7 +72,7 @@ span:hover {
 .newspaper {
   background-color: antiquewhite;
   font-family: Times New Roman, Times, serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .reallybig {
