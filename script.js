@@ -7,7 +7,7 @@ function getRandomIndex(array) {
   return randomIndex;
 }
 
-function addRandomClass(span) {
+function addRandomClasses(span) {
   const style = ['newspaper', 'magazine1', 'magazine2'];
   const size = ['medium', 'big', 'reallybig'];
   const rotation = ['rotateleft', 'rotateright'];
@@ -26,7 +26,7 @@ function createLetter(text) {
   const span = document.createElement('span');
 
   span.textContent = text;
-  addRandomClass(span);
+  addRandomClasses(span);
 
   return span;
 }
@@ -64,4 +64,20 @@ function generateLetters() {
   }
 }
 
+function resetClasses(element) {
+  const span = element;
+
+  span.className = '';
+}
+
+function changeLetters(event) {
+  const element = event.target;
+
+  if (element.localName === 'span') {
+    resetClasses(element);
+    addRandomClasses(element);
+  }
+}
+
 button.addEventListener('click', generateLetters);
+board.addEventListener('click', changeLetters);

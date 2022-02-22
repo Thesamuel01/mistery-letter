@@ -1,3 +1,7 @@
+span:hover {
+  cursor: pointer;
+}
+
 .big {
   font-size: 30px;
   padding: 10px;
@@ -25,7 +29,7 @@
 
 .newspaper {
   background-color: antiquewhite;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman';
   font-weight: bold;
 }
 
